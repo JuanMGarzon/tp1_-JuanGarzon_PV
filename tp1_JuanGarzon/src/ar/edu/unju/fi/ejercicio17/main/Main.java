@@ -86,7 +86,7 @@ public class Main {
             System.out.println("Jugador agregado correctamente.");
         } catch (InputMismatchException e) {
             System.out.println("Error: ¡Debe ingresar un valor válido!");
-            scanner.next(); // Limpiar el buffer del scanner
+            scanner.next();
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
