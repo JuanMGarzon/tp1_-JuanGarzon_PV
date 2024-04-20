@@ -7,25 +7,25 @@ public class Persona {
 	
 	private String dni;
 	private String nombre;
-	private LocalDate fechaNacimiento;
-	private String provincia;
+	private LocalDate fechadenac;
+	private String prov;
 	
 	public Persona() {
 		
 	}
 
-	public Persona(String dni, String nombre, LocalDate fechaNacimiento, String provincia) {
+	public Persona(String dni, String nombre, LocalDate fechadenac, String prov) {
 		this.dni = dni;
 		this.nombre = nombre;
-		this.fechaNacimiento = fechaNacimiento;
-		this.provincia = provincia;
+		this.fechadenac = fechadenac;
+		this.prov = prov;
 	}
 
-	public Persona(String dni, String nombre, LocalDate fechaNacimiento) {
+	public Persona(String dni, String nombre, LocalDate fechadenac) {
 		this.dni = dni;
 		this.nombre = nombre;
-		this.fechaNacimiento = fechaNacimiento;
-		this.provincia = "Jujuy";
+		this.fechadenac = fechadenac;
+		this.prov = "Jujuy";
 	}
 
 	public String getDni() {
@@ -44,26 +44,26 @@ public class Persona {
 		this.nombre = nombre;
 	}
 
-	public LocalDate getfechaNacimiento() {
-		return fechaNacimiento;
+	public LocalDate getfechadenac() {
+		return fechadenac;
 	}
 
-	public void setfechaNacimiento(LocalDate fechaNacimiento) {
-		this.fechaNacimiento = fechaNacimiento;
+	public void setfechadenac(LocalDate fechadenac) {
+		this.fechadenac = fechadenac;
 	}
 
-	public String getProvincia() {
-		return provincia;
+	public String getprov() {
+		return prov;
 	}
 
-	public void setProvincia(String provincia) {
-		this.provincia = provincia;
+	public void setprov(String prov) {
+		this.prov = prov;
 	}
 	
 	public int calcularEdad() {
 		
 		LocalDate hoy = LocalDate.now();
-		Period periodo = Period.between(this.fechaNacimiento, hoy);
+		Period periodo = Period.between(this.fechadenac, hoy);
 		return periodo.getYears();
 		
 	}
@@ -78,8 +78,8 @@ public class Persona {
 		
 		System.out.println("DNI: " + dni);
 		System.out.println("Nombre: " + nombre);
-		System.out.println("Fecha de nacimiento: " + fechaNacimiento);
-		System.out.println("Provincia: " + provincia);
+		System.out.println("Fecha de nacimiento: " + fechadenac);
+		System.out.println("Provincia: " + prov);
 		System.out.println("Edad: " + calcularEdad());
 		if(verificarEdad()) {
 			
