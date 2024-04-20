@@ -40,11 +40,11 @@ public class Main {
 		Persona persona3 = new Persona(dni, nombre, fechaNacimiento);
 		
 		System.out.println("\n Datos de la persona 1: ");
-		persona1.mostrarDatos();
+		persona1.mostrardatos();
 		System.out.println("\n Datos de la persona 2: ");
-		persona2.mostrarDatos();
+		persona2.mostrardatos();
 		System.out.println("\n Datos de la persona 3: ");
-		persona3.mostrarDatos();
+		persona3.mostrardatos();
 		
 		scanner.close();
 		
