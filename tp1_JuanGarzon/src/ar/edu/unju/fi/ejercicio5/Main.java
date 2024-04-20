@@ -14,20 +14,20 @@ public class Main {
 		
 		Scanner scanner = new Scanner(System.in);
         
-        int numero;
+        int num;
         
         do {
         	
             System.out.print("Ingrese un número entre 1 y 9: ");
-            numero = scanner.nextInt();
+            num = scanner.nextInt();
             
-        } while (numero < 1 || numero > 9);
+        } while (num < 1 || num > 9);
         
-        System.out.println("Tabla de multiplicar del " + numero + ":");
+        System.out.println("Tabla de multiplicar del " + num + ":");
         
         for (int i = 1; i <= 10; i++) {
         	
-            System.out.println(numero + " x " + i + " = " + (numero * i));
+            System.out.println(num + " x " + i + " = " + (num * i));
             
         }
         
