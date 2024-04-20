@@ -18,12 +18,12 @@ public class Main {
 		
 		String pais = "Argentina";
 		int edad = 18;
-		float alturaEdificio = 1.70f;
-		double precioProducto = 100.0;
-		double calcCos = Math.cos(0.5);
-		String numTel = "3887738903";
+		float altedif = 1.70f;
+		double precioprod = 100.0;
+		double calcdecoseno = Math.cos(0.5);
+		String numdetelef = "3887738903";
 		
-		System.out.println("Pais: " + pais + " Edad: " + edad + " Altura edificio: " + alturaEdificio + " Precio producto: " + precioProducto + " Calculo cos: " + calcCos + " Numero telefono: " + numTel);
+		System.out.println("Pais: " + pais + " Edad: " + edad + " Altura edificio: " + altedif + " Precio producto: " + precioprod + " Calculo cos: " + calcdecoseno + " Numero telefono: " + numdetelef);
 		
 	}
 }
