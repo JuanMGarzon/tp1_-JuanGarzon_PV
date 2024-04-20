@@ -24,25 +24,25 @@ public class Main {
 		
 		Scanner scanner = new Scanner(System.in);
         
-        int numero, factorial = 1;
+        int num, factorial = 1;
         
         do {
         	
             System.out.print("Ingrese un número entre 0 y 10: ");
-            numero = scanner.nextInt();
+            num = scanner.nextInt();
             
-        } while (numero < 0 || numero > 10);
+        } while (num < 0 || num > 10);
         
         int i=1;
         
-        while (i<=numero) {
+        while (i<=num) {
         	
         	factorial *= i;
         	i++;
         	
         }
         
-        System.out.println("El factorial de " + numero + " es: " + factorial);
+        System.out.println("El factorial de " + num + " es: " + factorial);
         
         scanner.close();
 		
