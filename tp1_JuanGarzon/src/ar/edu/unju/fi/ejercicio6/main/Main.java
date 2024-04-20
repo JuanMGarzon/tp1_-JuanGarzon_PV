@@ -17,27 +17,27 @@ public class Main {
 		System.out.println("Ingrese el nombre: ");
 		persona1.setNombre(scanner.nextLine());
 		System.out.println("Ingrese el la fecha de nacimiento (yyyy-mm-dd): ");
-		persona1.setfechaNacimiento(LocalDate.parse(scanner.nextLine()));
+		persona1.setfechadenac(LocalDate.parse(scanner.nextLine()));
 		
 		System.out.println("Ingrese el DNI: ");
 		String dni = scanner.nextLine();
 		System.out.println("Ingrese el nombre: ");
 		String nombre = scanner.nextLine();
 		System.out.println("Ingrese el la fecha de nacimiento (yyyy-mm-dd): ");
-		LocalDate fechaNacimiento = LocalDate.parse(scanner.nextLine());
+		LocalDate fechadenac = LocalDate.parse(scanner.nextLine());
 		System.out.println("Ingrese la provincia: ");
-		String provincia = scanner.nextLine();
+		String prov = scanner.nextLine();
 		
-		Persona persona2 = new Persona(dni, nombre, fechaNacimiento, provincia);
+		Persona persona2 = new Persona(dni, nombre, fechadenac, prov);
 		
 		System.out.println("Ingrese el DNI: ");
 		dni = scanner.nextLine();
 		System.out.println("Ingrese el nombre: ");
 		nombre = scanner.nextLine();
 		System.out.println("Ingrese el la fecha de nacimiento (yyyy-mm-dd): ");
-		fechaNacimiento = LocalDate.parse(scanner.nextLine());
+		fechadenac = LocalDate.parse(scanner.nextLine());
 		
-		Persona persona3 = new Persona(dni, nombre, fechaNacimiento);
+		Persona persona3 = new Persona(dni, nombre, fechadenac);
 		
 		System.out.println("\n Datos de la persona 1: ");
 		persona1.mostrardatos();
