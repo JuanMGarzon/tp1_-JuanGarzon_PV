@@ -15,18 +15,18 @@ public class Main {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		int numero;
+		int num;
         
         System.out.print("Ingrese un número entero: ");
-        numero = scanner.nextInt();
+        num = scanner.nextInt();
         
-        if (numero % 2 == 0) {
+        if (num % 2 == 0) {
         	
-            System.out.println("El número ingresado es par. \nEl triple del número es: " + (numero * 3));
+            System.out.println("El número ingresado es par. \nEl triple del número es: " + (num * 3));
             
         } else {
         	
-            System.out.println("El número ingresado es impar. \nEl doble del número es: " + (numero * 2));
+            System.out.println("El número ingresado es impar. \nEl doble del número es: " + (num * 2));
             
         }
         
